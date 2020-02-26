@@ -14,9 +14,11 @@ const App = () => {
   return (
     <div>
       <SavedList list={savedList} />
+      {/* Setting Movie/MovieList to their router paths */}
       <Route exact path="/">
         <MovieList />
       </Route>
+      {/* Setting a dynamic id path */}
       <Route path="/movies/:id">
         <Movie />
       </Route>
